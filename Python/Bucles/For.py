@@ -1,17 +1,16 @@
-lista = ["CRISTO","VIVE","Y","ME","AMA"]
-tuplas = (12,23,32,22,93)
-conjuntos = {1,2,3,4,5}
+numeros = [1,2,3,4,5,6,7,8,9,0]
 
-#Recorre cada indice de las listas
-for l in lista:
-    print(l)
+#FUnción lambda -> multiplicar por 2
+multiplicar_por_dos = lambda x : x*2
 
-#Recorre varias cosas (listas,tuplas,etc) a la vez
-for l,t,c in zip(lista,tuplas,conjuntos):
-    print(f'Valores de la Lista: {l} - Valores de las tuplas: {t} - Valores de los conjuntos: {c}')
-#Respuesta en consola:
-#Valores de la Lista: CRISTO - Valores de las tuplas: 12 1
-# Valores de la Lista: VIVE - Valores de las tuplas: 23 2
-# Valores de la Lista: Y - Valores de las tuplas: 32 3
-# Valores de la Lista: ME - Valores de las tuplas: 22 4
-# Valores de la Lista: AMA - Valores de las tuplas: 93 5
+#Función que diga si un número es par o no
+# def es_par(num):
+#     if(num%2==0):
+#         return True
+    
+# #Usando filter con una función común
+# numeros_pares = filter(es_par,numeros)
+
+#Creando lo mismo qe antes pero con lambda
+numeros_pares = filter(lambda num : num%2 == 0, numeros)
+print(numeros_pares)
