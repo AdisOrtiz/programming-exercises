@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de tareas</title>
+</head>
+<body>
+    <h1>Mi CRUD de tareas</h1>
+    <form action="/agregar" method="POST">
+        <!-- action="/agregar" = cuando se envíe el formulario, manda los datos a esta ruta, o sea /agregar
+         Usamos POST porque se va aenviar información-->
+        <input type="text" name="tarea">
+        <button type="submit">Agregar</button>
+    </form>
+    <ul>
+        {% for tarea in tareas %} <!-- recorre la lista tareas -->
+            <li>
+                {{tarea[1]}}
+                <a href="/eliminar/{{tarea[0]}}">Eliminar</a>
+            </li> <!-- muestra el valor -->
+
+            <a href="/editar/{{tarea[0]}}">Editar</a>
+        {% endfor %} <!-- fin del bucle -->
+    </ul>
+</body>
+</html>

@@ -1,0 +1,26 @@
+Los datos son: 
+Nombre: JuanC
+Apellido: Ortiz
+-----------
+Nombre: Mere
+Apellido: Gomez
+-----------
+Nombre: Adriana
+Apellido: Ortiz1
+-----------
+Nombre: Andrea
+Apellido: Ortiz2
+-----------
+Los datos son: 
+Nombre: JuanC
+Apellido: Ortiz
+-----------
+Nombre: Mere
+Apellido: Gomez
+-----------
+Nombre: Adriana
+Apellido: Ortiz1
+-----------
+Nombre: Andrea
+Apellido: Ortiz2
+-----------
